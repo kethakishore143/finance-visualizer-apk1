@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Personal Finance Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application designed to help users track and visualize their personal finances.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Stage 1: Basic Transaction Tracking
 
-### `npm start`
+- **Transaction Management**: Add, edit, and delete transactions including amount, date, and description.
+- **Transaction List**: View a list of all transactions.
+- **Visualization**: Display a bar chart of monthly expenses.
+- **Form Validation**: Ensure data integrity with basic form validation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Stage 2: Categories
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Categorization**: Assign predefined categories to transactions.
+- **Visualization**: View a pie chart representing expenses by category.
+- **Dashboard**: Access summary cards displaying total expenses, category breakdown, and recent transactions.
 
-### `npm test`
+### Stage 3: Budgeting
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Budget Setup**: Set monthly budgets for each category.
+- **Comparison**: Compare actual spending against the set budget.
+- **Insights**: Gain simple spending insights to manage finances better.
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React, Recharts, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Deployment**: Vercel
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository:
 
-### `npm run eject`
+```bash
+git clone https://github.com/yourusername/finance-visualizer-apk.git
+cd finance-visualizer
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Navigate to the backend directory:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+cd backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm install
 
-## Learn More
+# Set up environment variables in a .env file:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+MONGODB_URI=your_mongodb_connection_string
+PORT=5000
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Start the server:
 
-### Code Splitting
+nodemon server.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# # Frontend Setup
 
-### Analyzing the Bundle Size
+cd ../finance-visualization-apk
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Install dependencies:
 
-### Making a Progressive Web App
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Start the development server:
 
-### Advanced Configuration
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Open your browser and go to http://localhost:3000/finance-visualizer-apk to view the application.
 
-### Deployment
+📊 Visualizations
+Monthly Expenses Bar Chart: Displays total expenses per month.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Category-wise Pie Chart: Shows the distribution of expenses across different categories.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Budget vs Actual Comparison: Compares the planned budget with actual spending.
