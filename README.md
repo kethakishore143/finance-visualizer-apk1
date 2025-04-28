@@ -35,11 +35,13 @@ A web application designed to help users track and visualize their personal fina
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/finance-visualizer-apk.git
-cd finance-visualizer
+git clone https://github.com/yourusername/finance-visualizer-apk1.git
+cd finance-visualizer-apk
 ```
 
 # Navigate to the backend directory:
+
+git clone https://github.com/yourusername/finance-visualizer-apk.git
 
 cd backend
 
@@ -68,7 +70,7 @@ npm install
 
 npm start
 
-Open your browser and go to http://localhost:3000/finance-visualizer-apk to view the application.
+Open your browser and go to http://localhost:3000/finance-visualizer-apk1 to view the application.
 
 📊 Visualizations
 Monthly Expenses Bar Chart: Displays total expenses per month.
